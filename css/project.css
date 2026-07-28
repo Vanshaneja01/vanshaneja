@@ -1,0 +1,159 @@
+/* ===========================================
+   PROJECTS SECTION
+=========================================== */
+
+#projects{
+
+    position: relative;
+
+}
+
+/* ===========================================
+   PROJECT GRID
+=========================================== */
+
+.projects-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+
+    gap:35px;
+
+}
+
+/* ===========================================
+   CARD
+=========================================== */
+
+.project-card{
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    transition:.4s;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-12px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:
+    0 25px 60px rgba(0,229,255,.15);
+
+}
+
+/* ===========================================
+   IMAGE
+=========================================== */
+
+.project-card img{
+
+    width:100%;
+
+    height:240px;
+
+    object-fit:cover;
+
+    transition:.4s;
+
+}
+
+.project-card:hover img{
+
+    transform:scale(1.05);
+
+}
+
+/* ===========================================
+   CONTENT
+=========================================== */
+
+.project-content{
+
+    padding:30px;
+
+}
+
+.project-content h3{
+
+    font-family:"Space Grotesk",sans-serif;
+
+    font-size:1.7rem;
+
+    margin-bottom:15px;
+
+}
+
+.project-content p{
+
+    color:var(--light-text);
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+/* ===========================================
+   TECHNOLOGY TAGS
+=========================================== */
+
+.project-tech{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-bottom:30px;
+
+}
+
+.project-tech span{
+
+    padding:8px 16px;
+
+    border-radius:30px;
+
+    background:rgba(0,229,255,.10);
+
+    color:var(--primary-color);
+
+    font-size:.9rem;
+
+    border:1px solid rgba(0,229,255,.20);
+
+}
+
+/* ===========================================
+   BUTTONS
+=========================================== */
+
+.project-buttons{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.project-buttons .primary-btn,
+.project-buttons .secondary-btn{
+
+    flex:1;
+
+    text-align:center;
+
+}

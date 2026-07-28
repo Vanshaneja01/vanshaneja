@@ -1,0 +1,280 @@
+/* ===========================================
+   HERO SECTION
+=========================================== */
+
+#hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:80px;
+
+    padding-top:120px;
+
+}
+
+/* LEFT */
+
+.hero-left{
+
+    flex:1;
+
+}
+
+.hero-greeting{
+
+    color:var(--primary-color);
+
+    font-size:1.1rem;
+
+    margin-bottom:20px;
+
+    letter-spacing:1px;
+
+}
+
+.hero-left h1{
+
+    font-size:5rem;
+
+    line-height:1.1;
+
+    font-weight:800;
+
+    margin-bottom:20px;
+
+    font-family:"Space Grotesk",sans-serif;
+
+}
+
+.hero-left h1 span{
+
+    color:var(--primary-color);
+
+}
+
+.hero-left h3{
+
+    font-size:2rem;
+
+    color:#cbd5e1;
+
+    margin-bottom:25px;
+
+    min-height:45px;
+
+}
+
+.hero-description{
+
+    max-width:650px;
+
+    color:var(--light-text);
+
+    line-height:1.9;
+
+    font-size:1.05rem;
+
+    margin-bottom:40px;
+
+}
+
+/* BUTTONS */
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    margin-bottom:40px;
+
+}
+
+.primary-btn{
+
+    background:linear-gradient(
+        135deg,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+
+    color:white;
+
+    padding:15px 34px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.secondary-btn{
+
+    border:2px solid var(--primary-color);
+
+    color:var(--primary-color);
+
+    padding:15px 34px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.secondary-btn:hover{
+
+    background:var(--primary-color);
+
+    color:black;
+
+}
+
+/* SOCIAL */
+
+.hero-social{
+
+    display:flex;
+
+    gap:22px;
+
+}
+
+.hero-social a{
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#111827;
+
+    color:white;
+
+    font-size:20px;
+
+    transition:.35s;
+
+}
+
+.hero-social a:hover{
+
+    background:var(--primary-color);
+
+    color:black;
+
+    transform:translateY(-6px);
+
+}
+
+/* RIGHT */
+
+.hero-right{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.hero-image-wrapper{
+
+    position:relative;
+
+}
+
+/* GLOW */
+
+.glow-circle{
+
+    position:absolute;
+
+    width:420px;
+
+    height:420px;
+
+    background:radial-gradient(circle,
+    rgba(0,229,255,.35),
+    transparent 70%);
+
+    border-radius:50%;
+
+    filter:blur(40px);
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+}
+
+/* IMAGE */
+
+.image-box{
+
+    width:370px;
+
+    height:470px;
+
+    overflow:hidden;
+
+    border-radius:35px;
+
+    border:2px solid rgba(255,255,255,.1);
+
+    position:relative;
+
+    backdrop-filter:blur(15px);
+
+    box-shadow:
+    0 30px 60px rgba(0,0,0,.45);
+
+}
+
+.image-box img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+/* FLOAT */
+
+.float{
+
+    animation:float 5s ease-in-out infinite;
+
+}

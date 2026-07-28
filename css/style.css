@@ -1,0 +1,345 @@
+/* ===========================================
+   CSS RESET
+=========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+/* ===========================================
+   ROOT VARIABLES
+=========================================== */
+
+:root{
+
+    --bg-color:#050816;
+    --surface-color:#111827;
+    --card-color:rgba(17,24,39,0.75);
+
+    --primary-color:#00E5FF;
+    --secondary-color:#7C3AED;
+
+    --white:#FFFFFF;
+    --light-text:#94A3B8;
+    --border-color:rgba(255,255,255,.08);
+
+    --shadow:
+    0 20px 60px rgba(0,0,0,.35);
+
+}
+
+
+/* ===========================================
+   HTML
+=========================================== */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+/* ===========================================
+   BODY
+=========================================== */
+
+body{
+
+    font-family:'Inter',sans-serif;
+
+    background:#050816;
+
+    color:var(--white);
+
+    overflow-x:hidden;
+
+    line-height:1.7;
+
+    background-image:
+
+    radial-gradient(circle at 10% 20%, rgba(0,229,255,.10), transparent 30%),
+
+    radial-gradient(circle at 90% 15%, rgba(124,58,237,.12), transparent 35%),
+
+    radial-gradient(circle at 50% 90%, rgba(0,229,255,.08), transparent 40%);
+
+}
+
+
+/* ===========================================
+   SCROLLBAR
+=========================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#08101f;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary-color);
+
+    border-radius:50px;
+
+}
+
+
+/* ===========================================
+   TEXT SELECTION
+=========================================== */
+
+::selection{
+
+    background:var(--primary-color);
+
+    color:#000;
+
+}
+
+
+/* ===========================================
+   GLOBAL ELEMENTS
+=========================================== */
+
+main{
+
+    max-width:1500px;
+
+    margin:auto;
+
+}
+
+section{
+
+    padding:120px 10%;
+
+}
+
+img{
+
+    display:block;
+
+    width:100%;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+button{
+
+    font-family:inherit;
+
+    cursor:pointer;
+
+    border:none;
+
+}
+
+input,
+textarea{
+
+    font-family:inherit;
+
+    outline:none;
+
+}
+
+
+/* ===========================================
+   CONTAINER
+=========================================== */
+
+.container{
+
+    width:100%;
+
+    max-width:1300px;
+
+    margin:auto;
+
+}
+
+
+/* ===========================================
+   SECTION TITLE
+=========================================== */
+
+.section-title{
+
+    font-family:'Space Grotesk',sans-serif;
+
+    font-size:3.2rem;
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+}
+
+.section-subtitle{
+
+    text-align:center;
+
+    color:var(--light-text);
+
+    max-width:700px;
+
+    margin:0 auto 80px;
+
+}
+
+
+/* ===========================================
+   GLASS CARD
+=========================================== */
+
+.glass{
+
+    background:rgba(255,255,255,.04);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+}
+
+
+/* ===========================================
+   BUTTONS
+=========================================== */
+
+.primary-btn{
+
+    display:inline-block;
+
+    padding:16px 34px;
+
+    border-radius:50px;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+
+    color:white;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.primary-btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 12px 35px rgba(0,229,255,.35);
+
+}
+
+.secondary-btn{
+
+    display:inline-block;
+
+    padding:16px 34px;
+
+    border-radius:50px;
+
+    border:2px solid rgba(255,255,255,.10);
+
+    transition:.35s;
+
+}
+
+.secondary-btn:hover{
+
+    background:white;
+
+    color:#000;
+
+}
+
+
+/* ===========================================
+   COMMON ANIMATIONS
+=========================================== */
+
+.fade-up{
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+}
+
+.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+    transition:.8s;
+
+}
+
+
+/* ===========================================
+   UTILITIES
+=========================================== */
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.mt-2{
+
+    margin-top:20px;
+
+}
+
+.mt-4{
+
+    margin-top:40px;
+
+}
+
+.mb-2{
+
+    margin-bottom:20px;
+
+}
+
+.mb-4{
+
+    margin-bottom:40px;
+
+}

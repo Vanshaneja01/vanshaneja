@@ -1,0 +1,406 @@
+/* ===========================================
+   GLOBAL TRANSITIONS
+=========================================== */
+
+*{
+    transition:
+    background-color .3s ease,
+    color .3s ease,
+    border-color .3s ease;
+}
+
+
+/* ===========================================
+   FADE UP
+=========================================== */
+
+.fade-up{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:all .8s ease;
+
+}
+
+.fade-up.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+/* ===========================================
+   FADE LEFT
+=========================================== */
+
+.fade-left{
+
+    opacity:0;
+
+    transform:translateX(-80px);
+
+    transition:all .8s ease;
+
+}
+
+.fade-left.show{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+
+/* ===========================================
+   FADE RIGHT
+=========================================== */
+
+.fade-right{
+
+    opacity:0;
+
+    transform:translateX(80px);
+
+    transition:all .8s ease;
+
+}
+
+.fade-right.show{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+
+/* ===========================================
+   ZOOM IN
+=========================================== */
+
+.zoom{
+
+    opacity:0;
+
+    transform:scale(.8);
+
+    transition:all .7s ease;
+
+}
+
+.zoom.show{
+
+    opacity:1;
+
+    transform:scale(1);
+
+}
+
+
+/* ===========================================
+   FLOATING ANIMATION
+=========================================== */
+
+.float{
+
+    animation:float 5s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-18px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+
+/* ===========================================
+   GLOW
+=========================================== */
+
+.glow{
+
+    animation:glow 3s infinite alternate;
+
+}
+
+@keyframes glow{
+
+    from{
+
+        box-shadow:
+        0 0 15px rgba(0,229,255,.20);
+
+    }
+
+    to{
+
+        box-shadow:
+        0 0 35px rgba(0,229,255,.55);
+
+    }
+
+}
+
+
+/* ===========================================
+   ROTATE
+=========================================== */
+
+.rotate{
+
+    animation:rotate 18s linear infinite;
+
+}
+
+@keyframes rotate{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+
+/* ===========================================
+   BOUNCE
+=========================================== */
+
+.bounce{
+
+    animation:bounce 2.2s infinite;
+
+}
+
+@keyframes bounce{
+
+    0%,
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+}
+
+
+/* ===========================================
+   PULSE
+=========================================== */
+
+.pulse{
+
+    animation:pulse 2s infinite;
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.08);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+
+/* ===========================================
+   GRADIENT ANIMATION
+=========================================== */
+
+.gradient{
+
+    background:linear-gradient(
+        270deg,
+        #00E5FF,
+        #7C3AED,
+        #00E5FF
+    );
+
+    background-size:400% 400%;
+
+    animation:gradientMove 8s ease infinite;
+
+}
+
+@keyframes gradientMove{
+
+    0%{
+
+        background-position:0% 50%;
+
+    }
+
+    50%{
+
+        background-position:100% 50%;
+
+    }
+
+    100%{
+
+        background-position:0% 50%;
+
+    }
+
+}
+
+
+/* ===========================================
+   BUTTON HOVER
+=========================================== */
+
+.primary-btn:hover,
+.secondary-btn:hover{
+
+    transform:
+    translateY(-5px)
+    scale(1.03);
+
+}
+
+
+/* ===========================================
+   SOCIAL ICONS
+=========================================== */
+
+.hero-social a:hover,
+.contact-social a:hover{
+
+    transform:
+    translateY(-8px)
+    rotate(8deg);
+
+}
+
+
+/* ===========================================
+   PROJECT CARDS
+=========================================== */
+
+.project-card:hover{
+
+    transform:
+    translateY(-12px)
+    scale(1.02);
+
+}
+
+
+/* ===========================================
+   SKILL CARD
+=========================================== */
+
+.skill-card:hover{
+
+    transform:
+    translateY(-10px)
+    scale(1.03);
+
+}
+
+
+/* ===========================================
+   ACHIEVEMENT CARD
+=========================================== */
+
+.achievement-card:hover{
+
+    transform:
+    translateY(-12px)
+    scale(1.02);
+
+}
+
+
+/* ===========================================
+   TIMELINE CARD
+=========================================== */
+
+.timeline-content:hover{
+
+    transform:
+    translateY(-8px)
+    scale(1.02);
+
+}
+
+
+/* ===========================================
+   IMAGE HOVER
+=========================================== */
+
+.image-box img:hover{
+
+    transform:scale(1.05);
+
+}
+.cursor-glow{
+
+    width:25px;
+
+    height:25px;
+
+    position:fixed;
+
+    border-radius:50%;
+
+    pointer-events:none;
+
+    background:rgba(0,229,255,.35);
+
+    transform:translate(-50%,-50%);
+
+    filter:blur(10px);
+
+    z-index:9999;
+
+}

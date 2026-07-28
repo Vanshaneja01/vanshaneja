@@ -1,0 +1,137 @@
+/* ===========================================
+   ABOUT SECTION
+=========================================== */
+
+#about{
+
+    position:relative;
+
+}
+
+/* ===========================================
+   CONTAINER
+=========================================== */
+
+.about-container{
+
+    display:grid;
+
+    grid-template-columns:1fr 1.3fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+/* ===========================================
+   IMAGE
+=========================================== */
+
+.about-image{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.about-image img{
+
+    width:380px;
+
+    border-radius:25px;
+
+    border:2px solid rgba(255,255,255,.08);
+
+    box-shadow:
+
+    0 25px 70px rgba(0,229,255,.18);
+
+}
+
+/* ===========================================
+   CONTENT
+=========================================== */
+
+.about-content h3{
+
+    font-family:"Space Grotesk",sans-serif;
+
+    font-size:2.3rem;
+
+    margin-bottom:25px;
+
+}
+
+.about-content p{
+
+    color:var(--light-text);
+
+    line-height:1.9;
+
+    margin-bottom:20px;
+
+}
+
+/* ===========================================
+   STATS
+=========================================== */
+
+.about-stats{
+
+    display:flex;
+
+    gap:25px;
+
+    margin:40px 0;
+
+}
+
+.stat-card{
+
+    flex:1;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.04);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    text-align:center;
+
+    transition:.35s;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:
+
+    0 15px 40px rgba(0,229,255,.18);
+
+}
+
+.stat-card h2{
+
+    color:var(--primary-color);
+
+    font-size:2rem;
+
+    margin-bottom:10px;
+
+}
+
+.stat-card span{
+
+    color:var(--light-text);
+
+}

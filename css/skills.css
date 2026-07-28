@@ -1,0 +1,147 @@
+/* ===========================================
+   SKILLS SECTION
+=========================================== */
+
+#skills{
+
+    position:relative;
+
+}
+
+/* ===========================================
+   GRID
+=========================================== */
+
+.skills-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:30px;
+
+}
+
+/* ===========================================
+   CARD
+=========================================== */
+
+.skill-card{
+
+    padding:40px 25px;
+
+    text-align:center;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,.04);
+
+    backdrop-filter:blur(16px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+    cursor:pointer;
+
+}
+
+.skill-card:hover{
+
+    transform:translateY(-12px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:
+
+    0 20px 45px rgba(0,229,255,.18);
+
+}
+
+/* ===========================================
+   ICON
+=========================================== */
+
+.skill-card i{
+
+    font-size:3.5rem;
+
+    color:var(--primary-color);
+
+    margin-bottom:25px;
+
+    transition:.35s;
+
+}
+
+.skill-card:hover i{
+
+    transform:scale(1.2) rotate(8deg);
+
+}
+
+/* ===========================================
+   TEXT
+=========================================== */
+
+.skill-card h3{
+
+    font-family:"Space Grotesk",sans-serif;
+
+    font-size:1.4rem;
+
+    margin-bottom:12px;
+
+}
+
+.skill-card span{
+
+    color:var(--light-text);
+
+    font-size:.95rem;
+
+    line-height:1.6;
+
+}
+
+/* ===========================================
+   HOVER GLOW
+=========================================== */
+
+.skill-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:25px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(0,229,255,.12),
+        rgba(124,58,237,.12)
+    );
+
+    opacity:0;
+
+    transition:.35s;
+
+    z-index:-1;
+
+}
+
+.skill-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.skill-card:hover::before{
+
+    opacity:1;
+
+}

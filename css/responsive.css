@@ -1,0 +1,335 @@
+/* ===========================================
+   LARGE LAPTOPS
+=========================================== */
+
+@media (max-width:1400px){
+
+    section{
+        padding:100px 7%;
+    }
+
+}
+
+
+/* ===========================================
+   LAPTOPS
+=========================================== */
+
+@media (max-width:1200px){
+
+    .hero-left h1{
+        font-size:4.5rem;
+    }
+
+    .image-box{
+        width:360px;
+        height:450px;
+    }
+
+}
+
+
+/* ===========================================
+   TABLETS
+=========================================== */
+
+@media (max-width:992px){
+
+    section{
+        padding:90px 6%;
+    }
+
+    #hero{
+
+        flex-direction:column-reverse;
+
+        text-align:center;
+
+        gap:60px;
+
+    }
+
+    .hero-left{
+
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .hero-left h1{
+
+        font-size:3.8rem;
+
+    }
+
+    .hero-description{
+
+        max-width:700px;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+    }
+
+    .hero-social{
+
+        justify-content:center;
+
+    }
+
+    .about-container{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+    .about-image{
+
+        order:-1;
+
+    }
+
+    .about-stats{
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+    }
+
+    .contact-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .footer-container{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+}
+
+
+/* ===========================================
+   MOBILE NAVBAR
+=========================================== */
+
+@media (max-width:768px){
+
+    header{
+
+        padding:18px 6%;
+
+    }
+
+    .menu-toggle{
+
+        display:block;
+
+        font-size:2rem;
+
+        z-index:1001;
+
+    }
+
+    .nav-links{
+
+        position:fixed;
+
+        top:80px;
+
+        right:-100%;
+
+        width:260px;
+
+        height:calc(100vh - 80px);
+
+        background:#08101f;
+
+        flex-direction:column;
+
+        justify-content:flex-start;
+
+        align-items:center;
+
+        padding-top:50px;
+
+        transition:.4s;
+
+        border-left:1px solid rgba(255,255,255,.08);
+
+    }
+
+    .nav-links.active{
+
+        right:0;
+
+    }
+
+}
+
+
+/* ===========================================
+   MOBILE
+=========================================== */
+
+@media (max-width:768px){
+
+    .hero-left h1{
+
+        font-size:3rem;
+
+        line-height:1.2;
+
+    }
+
+    .hero-left h3{
+
+        font-size:1.5rem;
+
+    }
+
+    .hero-description{
+
+        font-size:1rem;
+
+    }
+
+    .image-box{
+
+        width:300px;
+
+        height:380px;
+
+    }
+
+    .section-title{
+
+        font-size:2.4rem;
+
+    }
+
+    .project-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .about-stats{
+
+        flex-direction:column;
+
+    }
+
+}
+
+
+/* ===========================================
+   SMALL MOBILE
+=========================================== */
+
+@media (max-width:576px){
+
+    section{
+
+        padding:80px 5%;
+
+    }
+
+    .hero-left h1{
+
+        font-size:2.4rem;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+        width:100%;
+
+    }
+
+    .primary-btn,
+    .secondary-btn{
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+    .image-box{
+
+        width:260px;
+
+        height:330px;
+
+    }
+
+    .about-image img{
+
+        width:260px;
+
+    }
+
+    .contact-form button{
+
+        width:100%;
+
+    }
+
+    .footer-bottom{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+}
+
+
+/* ===========================================
+   EXTRA SMALL DEVICES
+=========================================== */
+
+@media (max-width:400px){
+
+    .hero-left h1{
+
+        font-size:2rem;
+
+    }
+
+    .hero-social{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+    }
+
+    .contact-item{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+}

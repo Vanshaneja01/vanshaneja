@@ -1,0 +1,146 @@
+/* ===========================================
+   ACHIEVEMENTS SECTION
+=========================================== */
+
+#achievements{
+
+    position: relative;
+
+}
+
+/* ===========================================
+   GRID
+=========================================== */
+
+.achievement-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+}
+
+/* ===========================================
+   CARD
+=========================================== */
+
+.achievement-card{
+
+    background:rgba(255,255,255,.04);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:25px;
+
+    padding:35px;
+
+    transition:.4s;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.achievement-card:hover{
+
+    transform:translateY(-12px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:
+    0 20px 50px rgba(0,229,255,.18);
+
+}
+
+/* ===========================================
+   ICON
+=========================================== */
+
+.achievement-icon{
+
+    width:75px;
+
+    height:75px;
+
+    border-radius:20px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+
+    color:#fff;
+
+    font-size:2rem;
+
+    margin-bottom:25px;
+
+}
+
+/* ===========================================
+   TEXT
+=========================================== */
+
+.achievement-card h3{
+
+    font-family:"Space Grotesk",sans-serif;
+
+    font-size:1.5rem;
+
+    margin-bottom:15px;
+
+}
+
+.achievement-card p{
+
+    color:var(--light-text);
+
+    line-height:1.8;
+
+}
+
+/* ===========================================
+   TOP BORDER ANIMATION
+=========================================== */
+
+.achievement-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:0;
+
+    height:4px;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+
+    transition:.4s;
+
+}
+
+.achievement-card:hover::before{
+
+    width:100%;
+
+}
